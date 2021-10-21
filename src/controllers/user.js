@@ -7,7 +7,7 @@ class UserController {
 		const user = await regUser({
 			username: userInfo.username,
 			password: getMd5(userInfo.password),
-			nickName: userInfo.nickName,
+			nickName: userInfo.nickName || null,
 			email: userInfo.email,
 			phone: userInfo.phone || null,
 			status: true,

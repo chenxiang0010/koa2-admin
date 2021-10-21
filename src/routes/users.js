@@ -4,11 +4,8 @@ const { register } = require('../controllers/user')
 router.prefix('/users')
 
 router.post(
-	'/register',
-	(ctx) => {
-		console.log('aaa')
-	},
-	register
+  '/register',
+  register
 )
 
 module.exports = router

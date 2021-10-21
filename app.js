@@ -35,18 +35,16 @@ app.use(async (ctx, next) => {
   console.log(`${ctx.method} ${ctx.url} - ${ms}ms`)
 })
 
-//统一响应处理
-app.use(routerResponse())
 
 //cors
 app.use(cors())
 
+//统一响应处理
+app.use(routerResponse())
 
-app.use(ctx => {
-  ctx.sendResult(null, 200, 'secc')
-})
+
 // routes
-const useRoutes = require('./src/routes/index')
+const { useRoutes } = require('./src/routes/index')
 useRoutes(app)
 
 // error-handling

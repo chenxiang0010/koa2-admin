@@ -1,0 +1,10 @@
+{
+  "dataInfo": {
+    "database": "koa2-admin",
+    "username": "root",
+    "password": "root",
+    "host": "159.75.48.185",
+    "port": "3306",
+    "dialect": "mysql"
+  }
+}

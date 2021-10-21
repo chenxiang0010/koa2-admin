@@ -46,8 +46,8 @@ app.use(ctx => {
   ctx.sendResult(null, 200, 'secc')
 })
 // routes
-// const useRoutes = require('./src/routes/index')
-// useRoutes(app)
+const useRoutes = require('./src/routes/index')
+useRoutes(app)
 
 // error-handling
 app.on('error', (err, ctx) => {

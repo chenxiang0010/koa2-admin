@@ -5,7 +5,7 @@ const json = require('koa-json')
 const onerror = require('koa-onerror')
 const bodyparser = require('koa-bodyparser')
 const logger = require('koa-logger')
-const cors = require('koa2-cors')
+const cors = require('@koa/cors')
 
 const { routerResponse } = require('./src/utils/result')
 // error handler
